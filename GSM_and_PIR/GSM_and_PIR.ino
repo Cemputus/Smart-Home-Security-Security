@@ -16,12 +16,7 @@ void setup() {
   // Begin serial communication with Arduino and Arduino IDE (Serial Monitor)
   Serial.begin(9600);
   
-  // Begin serial communication with Arduino and SIM800L
-  mySerial.begin(9600);
-
-  Serial.println("Initializing...");
-  delay(1000);
-
+  // Begin serial communicat
   // Handshake with SIM800L
   mySerial.println("AT"); // Once the handshake test is successful, it will return OK
   updateSerial();

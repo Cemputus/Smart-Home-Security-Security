@@ -26,7 +26,7 @@ void setup() {
   updateSerial();
   
   // Send an SMS
-  mySerial.println("AT+CMGS=\"+256741539324\""); // Change ZZ with country code and xxxxxxxxxxx with phone number
+  mySerial.println("AT+CMGS=\"+256741539324\""); 
   updateSerial();
   mySerial.print("⚠️ Intruder Alert ⚠️ | ensubga019@gmail.com"); // SMS content
   updateSerial();
@@ -34,9 +34,9 @@ void setup() {
   updateSerial();
   
   // Make a call
-  mySerial.println("ATD+ +256741539324;"); // Change ZZ with country code and xxxxxxxxxxx with phone number
+  mySerial.println("ATD+ +256741539324;");
   updateSerial();
-  delay(20000); // Wait for 20 seconds
+  delay(50000); // Wait for 50 seconds
   mySerial.println("ATH"); // Hang up the call
   updateSerial();
 }
