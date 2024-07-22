@@ -8,7 +8,7 @@ SoftwareSerial mySerial(3, 2); // SIM800L Tx & Rx is connected to Arduino #3 & #
 // Define pin constants
 const int motionLedPin = 13;   // LED for motion detection
 const int inputPin = 8;        // PIR sensor
-const int ldrLedPin = 12;      // LED for LDR
+const int ldrLedPin = A1;      // LED for LDR
 const int ldrPin = A0;         // LDR sensor
 const int buttonPin = 5;       // Pushbutton pin
 const int servoPin = 4;        // Servo pin
@@ -196,7 +196,7 @@ int measureDistance(int trigPin, int echoPin) {
 
 // Function to display alert
 void displayAlert(String location) {
-  tone(buzzer, 3000);  // Produce a 1kHz tone on the passive buzzer
+  tone(buzzer, 1000);  // Produce a 1kHz tone on the passive buzzer
   digitalWrite(motionLedPin, HIGH);
   lcd.clear();
   lcd.setCursor(0, 0); // Set cursor to character 0 on line 0
