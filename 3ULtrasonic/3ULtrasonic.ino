@@ -1,12 +1,13 @@
 #include <LiquidCrystal_I2C.h>
 
 // defines pins numbers
-const int trigPin1 = 12;
-const int echoPin1 = 10;
-const int trigPin2 = 5;
-const int echoPin2 = 6;
-const int trigPin3 = 3;
-const int echoPin3 = 4;
+const int trigPin1 = 12;       // Ultrasonic sensor 1 trig pin
+const int echoPin1 = 10;       // Ultrasonic sensor 1 echo pin
+const int trigPin2 = 6;        // Ultrasonic sensor 2 trig pin
+const int echoPin2 = 7;        // Ultrasonic sensor 2 echo pin
+const int trigPin3 = 9;        // Ultrasonic sensor 3 trig pin
+const int echoPin3 = 8;        // Ultrasonic sensor 3 echo pin
+
 const int buzzer = 11;
 const int ledPin = 13;
 

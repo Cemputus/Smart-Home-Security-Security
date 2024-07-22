@@ -104,7 +104,7 @@ void setup() {
   
   lcd.setCursor(2, 1);   // Move cursor to character 2 on line 1
   lcd.print("GROUP D");
-  delay(2000);           // Display the welcome message for 2 seconds
+  delay(6000);           // Display the welcome message for 2 seconds
   lcd.clear();           // Clear the screen
 }
 
